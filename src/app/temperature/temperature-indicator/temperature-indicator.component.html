@@ -1,8 +1,8 @@
 <div class="container-temperature-indicator">
   <div class="temperature-indicator">
     <div class="temperature-circle">
-      <div class="range-line min-line"></div>
-      <div class="range-line max-line"></div>
+      <div class="range-line min-line">{{minTemperature}}°C</div>
+      <div class="range-line max-line">{{maxTemperature}}°C</div>
       <div class="temperature-line" [style.transform]="'rotate(' + calculateRotation() + 'deg)'"></div>
       <div class="temperature-text">{{ currentTemperature }}°C</div>
     </div>
