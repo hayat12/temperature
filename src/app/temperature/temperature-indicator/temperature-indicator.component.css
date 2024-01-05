@@ -54,8 +54,10 @@
 
 .min-line {
   left: 5%;
+  background: blue;
 }
 
 .max-line {
   left: 95%;
+  background: red;
 }
