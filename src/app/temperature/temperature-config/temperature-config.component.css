@@ -1,0 +1,23 @@
+.temperature-container{
+  min-height: 100vh;
+
+}
+
+.temperature-inputs{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px;
+  background: #002c57;
+}
+
+.temperature-inputs .temperature-input{
+  display: flex;
+  flex-direction: column;
+  min-width: 20%;
+  color: #ffff;
+}
+.temperature-inputs .temperature-input .input{
+  padding: 8px 16px;
+}

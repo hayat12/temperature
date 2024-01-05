@@ -1,0 +1,22 @@
+<div class="temperature-container">
+  <div class="temperature-inputs">
+    <div class="temperature-input">
+      <label for="minTemperature">Minimum Temperature</label>
+      <input id="minTemperature" class="input" [(ngModel)]="minTemperature"
+        placeholder="Minimum Temperature" type="number" [min]="min" [max]="targetTemperature" />
+    </div>
+    <div class="temperature-input">
+      <label for="minTemperature">Target</label>
+      <input class="input" [(ngModel)]="targetTemperature" placeholder="Target Temperature" type="number"
+        [min]="minTemperature" [max]="maxTemperature" />
+    </div>
+    <div class="temperature-input">
+      <label for="minTemperature">Maximum Temperature</label>
+      <input class="input" [(ngModel)]="maxTemperature" placeholder="Maximum Temperature" type="number"
+        [min]="minTemperature" [max]="max" />
+    </div>
+  </div>
+
+  <beyonnex-temperature-indicator [minTemperature]="minTemperature" [maxTemperature]="maxTemperature"
+    [currentTemperature]="targetTemperature"></beyonnex-temperature-indicator>
+</div>

@@ -1,0 +1,61 @@
+.container-temperature-indicator{
+  padding: 15px;
+}
+.temperature-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #250c0c;
+}
+
+.temperature-indicator {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #ffff;
+  border: 1px solid #343a40;
+  border-radius: 50%;
+}
+
+.temperature-line {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  width: 4px;
+  height: 50%;
+  background-color: #dc3545;
+  transform: translateY(0) translateX(-50%) rotate(-90deg);
+}
+
+.temperature-text {
+  position: absolute;
+  bottom: 5%;
+  color: #000f;
+  font-size: 18px;
+}
+
+.range-line {
+  position: absolute;
+  top: 51%;
+  width: 3px;
+  height: 40px;
+  background-color: #343a40;
+  transform: translateX(-50%);
+}
+
+.min-line {
+  left: 5%;
+}
+
+.max-line {
+  left: 95%;
+}
